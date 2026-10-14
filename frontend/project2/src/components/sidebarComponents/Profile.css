@@ -1,0 +1,118 @@
+.profile-layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: #020617;
+  color: #f8fafc;
+}
+
+.profile-main {
+  flex: 1;
+  padding: 3rem 4rem;
+}
+
+.profile-header {
+  margin-bottom: 2rem;
+}
+
+.profile-header h2 {
+  font-size: 1.85rem;
+  font-weight: 700;
+  margin: 0 0 0.4rem 0;
+  color: #f8fafc;
+}
+
+.subtitle {
+  color: #94a3b8;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.loading-indicator {
+  color: #38bdf8;
+  font-size: 1rem;
+}
+
+.profile-form {
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+  padding: 2.25rem;
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #cbd5e1;
+}
+
+.form-group input,
+.form-group select {
+  padding: 0.75rem 1rem;
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  color: #f8fafc;
+  font-size: 0.95rem;
+  transition: border-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #38bdf8;
+}
+
+.input-disabled {
+  background-color: #020617 !important;
+  color: #64748b !important;
+  border-color: #1e293b !important;
+  cursor: not-allowed;
+}
+
+.save-btn {
+  margin-top: 0.5rem;
+  padding: 0.85rem;
+  background-color: #0284c7;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.save-btn:hover {
+  background-color: #0369a1;
+}
+
+.alert {
+  padding: 0.8rem 1.2rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  max-width: 520px;
+}
+
+.alert.success {
+  background-color: rgba(34, 197, 94, 0.15);
+  color: #4ade80;
+  border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+.alert.danger {
+  background-color: rgba(239, 68, 68, 0.15);
+  color: #f87171;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}

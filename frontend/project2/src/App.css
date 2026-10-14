@@ -1,0 +1,17 @@
+* {
+  color: black;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.Heading {
+  height: 10vh;
+  width: 100%;
+  background-color: #282c34;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  color: white;
+}

@@ -1,0 +1,112 @@
+.sidebar-container {
+  width: 20%;
+  min-width: 230px;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #0f172a;
+  border-right: 1px solid #1e293b;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  color: #f8fafc;
+}
+
+.sidebar-brand h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #38bdf8;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.2rem 0.55rem;
+  border-radius: 9999px;
+  letter-spacing: 0.05em;
+}
+
+.badge-student {
+  background: rgba(14, 165, 233, 0.15);
+  color: #38bdf8;
+  border: 1px solid rgba(14, 165, 233, 0.35);
+}
+
+.badge-teacher {
+  background: rgba(168, 85, 247, 0.15);
+  color: #c084fc;
+  border: 1px solid rgba(168, 85, 247, 0.35);
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-top: 2rem;
+  flex-grow: 1;
+}
+
+.nav-item {
+  color: #94a3b8;
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+.nav-item:hover {
+  background-color: #1e293b;
+  color: #f8fafc;
+}
+
+.nav-item.active {
+  background-color: #0284c7;
+  color: #ffffff;
+}
+
+.sidebar-footer {
+  border-top: 1px solid #1e293b;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-details small {
+  color: #64748b;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.user-details strong {
+  color: #e2e8f0;
+  font-size: 0.95rem;
+}
+
+.logout-btn {
+  background-color: #ef4444;
+  color: #ffffff;
+  border: none;
+  padding: 0.6rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.logout-btn:hover {
+  background-color: #dc2626;
+}
