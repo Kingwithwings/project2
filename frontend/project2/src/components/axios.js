@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:8080/api", // Point to Spring Boot server
+  baseURL: process.env.REACT_APP_API_URL || "http://localhost:8080/api", // Point to Spring Boot server
 });
 
 // Automatically inject JWT token into outgoing requests
