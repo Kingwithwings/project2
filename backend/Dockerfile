@@ -1,7 +1,7 @@
 # ---------------------------------------------------
 # Stage 1: Build the JAR with Maven
 # ---------------------------------------------------
-FROM eclipse-temurin:17-jdk-jammy AS builder
+FROM eclipse-temurin:21-jdk-jammy AS builder
 
 WORKDIR /app
 
@@ -24,7 +24,7 @@ RUN ./mvnw clean package -DskipTests
 # ---------------------------------------------------
 # Stage 2: Minimal Production Runtime
 # ---------------------------------------------------
-FROM eclipse-temurin:17-jre-jammy
+FROM eclipse-temurin:21-jre-jammy
 
 WORKDIR /app
 
