@@ -34,7 +34,10 @@ public class SecurityConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
-        config.setAllowedOriginPatterns(List.of("*")); 
+       config.setAllowedOrigins(List.of(
+        "http://localhost:3000",
+        "https://project2-tan-theta.vercel.app/" // Add your actual Vercel domain here
+    ));
         config.setAllowedMethods(Arrays.asList("GET", "POST","PUT", "DELETE", "OPTIONS"));
         config.setAllowedHeaders(List.of("Authorization", "Content-Type", "X-Requested-With"));
         config.setAllowCredentials(true);
